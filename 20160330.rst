@@ -1,0 +1,44 @@
+20160330 : python games
+#######################
+
+Today I decided to play around with python - the end goal is to port RWT to
+python. The plan was to 
+  1. read the .nrrd images (binary segmentations).
+  2. count total labeled voxels (total lesion volume).
+  3. get connected component count (lesion load)
+
+Read the .nrrd's
+================
+
+After successfully completing the first bullet with
+
+  pip install pynrrd
+
+  import nrrd
+
+Look at the 3D data
+===================
+
+Instead of going for bullet 2 I decided (*bad dog*) to *take a look* at the images.
+So much time has been wasted that the main conclusions have to be documented.
+
+If you want to do 3D visualization, google will lead you to mayavi or
+matplotlib or whatever else is there. The only sane solution , that I
+discovered with a popularity contest (number of downloads on pypi) is
+PyQtGraph.
+
+Just in case - results of the popularity contest:
+  package | daily | weekly | monthly DL
+  -------------------------------------
+  pyvtk   | 47    | 432    | 2039
+  vispy   | 20    | 243    | 817
+  glumpy  | 23    | 143    | 661
+  mayavi  | 108   | 432    | 2039
+  pyqtgraph | 154 | 977    | 8704
+  -------------------------------------
+
+
+It was the only one of those (tried each) that I was able to get 3D graphs
+from under python3 and virtualenv. No wonder it's most downloaded, dunno how
+those other packages got so high in google.
+
