@@ -42,3 +42,27 @@ It was the only one of those (tried each) that I was able to get 3D graphs
 from under python3 and virtualenv. No wonder it's most downloaded, dunno how
 those other packages got so high in google.
 
+The first commit in the bitbucket repo has some code for volume rendering.
+
+
+
+Count total labeled voxels (total lesion volume).
+=================================================
+
+Done easily with ndarray.sum()
+
+
+get connected component count (lesion load)
+===========================================
+
+For connected components python needs scipy. And we have to f*** around to
+install it cleanly.
+
+  sudo apt-get install libblas-dev liblapack-dev gfortran
+
+before
+  
+  pip install ScyPi
+
+also updated local pip, dunno if that was necessary
+

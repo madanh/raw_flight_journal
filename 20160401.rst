@@ -1,0 +1,6 @@
+Hey it's aprils fool day
+========================
+
+But this is not about this (tm). 
+
+Started to write the PhD thesis proposal, so python and RWT operations suspended. Yesterday I have had great time with pythoning the segmentation data into a nice format, and succeeded at that, but the RWT itself will have to wait (unless I decide to do it at night).:
